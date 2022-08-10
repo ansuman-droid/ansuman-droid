@@ -1,0 +1,431 @@
+<form action="/siteshare/Asset/SummaryView" id="Summary" method="post"><input id="TF_ProjectId" name="TF_ProjectId" type="hidden" value="102478" />
+    <input id="NotificationMessage_New" name="NotificationMessage_New" type="hidden" value="" />
+    <input id="NotificationMessage" name="NotificationMessage" type="hidden" value="" />
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+    if (!window.mvcClientValidationMetadata) {
+        window.mvcClientValidationMetadata = [];
+    }
+    window.mvcClientValidationMetadata.push({
+        "Fields": [],
+        "FormId": "Summary",
+        "ReplaceValidationSummary": false
+    });
+    //]]>
+</script>
+<div class="TF_ErrorDiv">
+    <div class="validation-summary-valid" id="validationSummary">
+        <ul>
+            <li style="display:none"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="exportData">
+    <img class="imgEXCEL" src="/siteshare/Content/Images/TS/icon_excel.jpg" title='click to download excel' />
+    <img class="imgPDF" src="/siteshare/Content/Images/TS/icon_pdf.gif" title='click to download pdf' alt='PDF' />
+    <img class="imgPrint" src="/siteshare/Content/Images/TS/icon_print.png" title='click to print' alt='Print' />
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        // $(".imgPDF").click(function () { GetPDF("", 0); });
+        $(".imgPrint").click(function() {
+            window.print();
+        });
+    });
+
+    function GetPDF(Process, ProjectId) {
+        var url = '/siteshare/Asset/GetSummaryPDF';
+        $.TDownload(url, 'Process=' + Process + '&ProjectId=' + ProjectId);
+    }
+
+    function GetExcel(Process, ProjectId) {
+        var url = '/siteshare/Asset/GetSummaryExcel';
+        $.TDownload(url, 'Process=' + Process + '&ProjectId=' + ProjectId);
+    }
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $(".imgPDF").click(function() {
+            GetPDF("Modification", 102478);
+        });
+        $(".imgEXCEL").click(function() {
+            GetExcel("Modification", 102478);
+        });
+    });
+</script>
+<a id="ExpandAll" title="Click here to Expand all" href="#" class="TF_buttonDarkgreen expand" style="margin-left: 13px; margin-bottom: 5px;"><span>Expand All</span> </a>
+<div class="clearfix"></div>
+<div class="summary">
+
+
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="120">
+        <span class="icon"></span>
+        <span class="heading">Site Information</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="121">
+        <span class="icon"></span>
+        <span class="heading">Special Info</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="249">
+        <span class="icon"></span>
+        <span class="heading">Project Information</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="23">
+        <span class="icon"></span>
+        <span class="heading">Access</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="209">
+        <span class="icon"></span>
+        <span class="heading">Access Contacts&nbsp;<span class='count'>6</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="83">
+        <span class="icon"></span>
+        <span class="heading">Lease&nbsp;<span class='count'>1</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="68">
+        <span class="icon"></span>
+        <span class="heading">Mast Antenna Space&nbsp;<span class='count'>1</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="50">
+        <span class="icon"></span>
+        <span class="heading">Antenna&nbsp;<span class='count'>9</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="49">
+        <span class="icon"></span>
+        <span class="heading">Antenna Connections&nbsp;<span class='count'>9</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="75">
+        <span class="icon"></span>
+        <span class="heading">Site Room</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="232">
+        <span class="icon"></span>
+        <span class="heading">Cell&nbsp;<span class='count'>6</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="72">
+        <span class="icon"></span>
+        <span class="heading">Radio Equipment&nbsp;<span class='count'>8</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="61">
+        <span class="icon"></span>
+        <span class="heading">Cable&nbsp;<span class='count'>5</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="223">
+        <span class="icon"></span>
+        <span class="heading">GPS Cable</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="214">
+        <span class="icon"></span>
+        <span class="heading">Feeder Cable</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="226">
+        <span class="icon"></span>
+        <span class="heading">Fiber Strands&nbsp;<span class='count'>12</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="230">
+        <span class="icon"></span>
+        <span class="heading">Power Strands&nbsp;<span class='count'>6</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="74">
+        <span class="icon"></span>
+        <span class="heading">Repeater</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="53">
+        <span class="icon"></span>
+        <span class="heading">Climate Control</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="59">
+        <span class="icon"></span>
+        <span class="heading">Energy</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="70">
+        <span class="icon"></span>
+        <span class="heading">Power&nbsp;<span class='count'>7</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="52">
+        <span class="icon"></span>
+        <span class="heading">Cabinet</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="126">
+        <span class="icon"></span>
+        <span class="heading">Transmission</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="130">
+        <span class="icon"></span>
+        <span class="heading">TRM Equipment</span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="238">
+        <span class="icon"></span>
+        <span class="heading">MBH Access&nbsp;<span class='count'>1</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+    <div class="clearfix exp expand" title="Click here to expand" data-firstcall="1" data-formid="244">
+        <span class="icon"></span>
+        <span class="heading">Port Details&nbsp;<span class='count'>1</span></span>
+        <div class="SummaryFrm">
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript">
+    function ExecutePageEvents(n, t, i, r, u, f, e, o, s, d) {
+        var notify = true;
+        var message = $('#NotificationMessage_New').val();
+        var messageNew = $('#NotificationMessage').val();
+
+        if (messageNew != null && messageNew != "" && (i.toLowerCase() == "towers site") && (messageNew.indexOf("towers_site") > -1)) {
+            notify = confirm(messageNew.replace("towers_site", ""));
+        } else if (message != undefined && message != '' && !(i.toLowerCase().indexOf("reject") > -1)) {
+            notify = false;
+            //notify = confirm(message);
+            /// code for Customized popup
+            var N = n,
+                T = t,
+                I = i,
+                R = r,
+                U = u,
+                F = f,
+                E = e,
+                O = o,
+                S = s,
+                D = d;
+            TF.popup({
+                title: 'System Approved Dates',
+                url: '/siteshare/Asset/SummaryPopup?TF_ProjectId=' + 102478,
+                async: false,
+                width: 'min-content',
+                success: function(data) {
+
+                }
+
+            });
+            //
+            $("#chkSystemapprovedAll").change(function() {
+                var status = this.checked;
+                $('.Systemapproved').prop('checked', status);
+            });
+            $(".Systemapproved").change(function() {
+                if (($(".Systemapproved:checkbox").length) == ($(".Systemapproved:checked").length))
+                    $('#chkSystemapprovedAll').prop('checked', true);
+                else
+                    $('#chkSystemapprovedAll').prop('checked', false);
+            });
+
+            $("#TF_Update").on('click', function() {
+                if ($(".Systemapproved:checked").length > 0)
+                    closepopup();
+                else
+                    $('#TF_ErrorDivPopUp').css({
+                        display: "block"
+                    });
+                SubmitStep(false);
+            });
+            $("#TF_Submit").on('click', function() {
+                closepopup();
+
+                SubmitStep(true);
+            });
+
+            function SubmitStep(isSubmit) {
+                var selected = new Array();
+                $.each($("input[class='Systemapproved']:checked"), function() {
+                    selected.push($(this).val());
+                });
+                //Display the selected CheckBox values.
+                if (selected.length > 0) {
+                    //  alert("Selected values: " + selected.join(","));
+                    // console.log("Selected values: " + selected.join(","));
+                    TF.get({
+                        url: '/siteshare/Asset/SaveSystemApprovedDate?TF_ProjectId=' + 102478 + '&IntegrationIds=' + selected.join(",")
+                    });
+                }
+                if (($(".Systemapproved:checkbox").length) == ($(".Systemapproved:checked").length)) {
+                    $('#NotificationMessage_New').val("");
+                }
+                if (isSubmit) {
+                    ExecuteEvents(N, T, I, R, U, F, E, O, S, D);
+                }
+
+            };
+        }
+        if (notify) {
+            ExecuteEvents(n, t, i, r, u, f, e, o, s, d)
+        }
+    }
+
+    $('#ExpandAll').off().on('click', function() {
+
+
+        if ($(this).hasClass('expand')) {
+            $(this).find('span').text('Collapse All');
+            $(this).attr('title', 'Click here to collapse all');
+            $('.exp.expand').click();
+        } else {
+            $(this).find('span').text('Expand All');
+            $(this).attr('title', 'Click here to expand all');
+            $('.exp.collapse').click();
+
+        }
+        $(this).toggleClass('expand').toggleClass('collapse');
+    });
+
+
+    $(".exp .SummaryFrm").click(function(e) {
+        e.stopPropagation();
+    });
+
+    $('.exp').off().on('click', function() {
+        var obj = $(this);
+
+        if ($(obj).attr('data-firstcall') == '1') {
+            $(obj).attr('data-firstcall', '0');
+
+            $(obj).toggleClass('expand').toggleClass('collapse')
+            if ($(obj).hasClass('expand')) {
+
+                $(obj).attr('title', 'Click here to expand');
+            } else {
+                $(obj).attr('title', 'Click here to collapse');
+            }
+
+
+            TF.get({
+                url: '/siteshare/Asset/AssetSummary?TF_ProjectId=102478&FbFormId=' + $(this).attr('data-formid') + '&SiteId=24966',
+                mask: $(obj),
+                async: false,
+                success: function(data) {
+                    $(obj).children('.SummaryFrm').html(data);
+
+                }
+            });
+        } else {
+            $(obj).toggleClass('expand').toggleClass('collapse');
+            $(obj).children('.D4AGrid').toggle();
+            $(obj).children('.SummaryFrm').toggle();
+
+            if ($(obj).hasClass('expand')) {
+
+                $(obj).attr('title', 'Click here to expand');
+            } else {
+                $(obj).attr('title', 'Click here to collapse');
+            }
+        }
+    });
+
+    function TVGrid_compare(FbFormId, ProjectAssetId) {
+
+        TF.popup({
+            title: 'Compare with Site',
+            url: '/siteshare/Asset/CompareWithSite?FBFormId=' + FbFormId + '&ProjectAssetId=' + ProjectAssetId
+        });
+    }
+</script>
